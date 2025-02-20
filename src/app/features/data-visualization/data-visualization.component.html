@@ -1,0 +1,11 @@
+<p-card>
+  @if ((resources$ | async)?.length) {
+    <app-visualization-mode (modeChanged)="mode = $event" />
+    <div class="preview">
+      <app-pie-chart *ngIf="mode === PreviewMode.Pie"></app-pie-chart>
+      <app-bar-chart *ngIf="mode === PreviewMode.Bar"></app-bar-chart>
+    </div>
+  } @else {
+    <app-no-data message="No data to visualize. Try uploading a file." />
+  }
+</p-card>

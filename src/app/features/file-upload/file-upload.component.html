@@ -1,0 +1,11 @@
+<p-fileupload
+  mode="basic"
+  chooseIcon="pi pi-upload"
+  chooseLabel="Select File"
+  [customUpload]="true"
+  [fileLimit]="1"
+  (uploadHandler)="uploadHandler($event)"
+  accept=".json"
+  auto="true"
+  maxFileSize="5242880"
+/>

@@ -1,0 +1,9 @@
+[
+  { "category": "A", "value": 30 },
+  { "category": "B", "value": 70 },
+  { "category": "C", "value": 50 },
+  { "category": "D", "value": 90 },
+  { "category": "E", "value": 20 },
+  { "category": "A-1", "value": 30 },
+  { "category": "B-2", "value": 70 }
+]

@@ -1,0 +1,23 @@
+<div class="modes">
+  <div class="mode-item">
+    <p-radiobutton
+      name="mode"
+      [value]="PreviewMode.Pie"
+      [ngModel]="mode()"
+      (onClick)="changeMode($event)"
+      [inputId]="PreviewMode.Pie"
+    ></p-radiobutton>
+    <label [for]="PreviewMode.Pie">{{ PreviewMode.Pie }}</label>
+  </div>
+
+  <div class="mode-item">
+    <p-radiobutton
+      name="mode"
+      [value]="PreviewMode.Bar"
+      (onClick)="changeMode($event)"
+      [ngModel]="mode()"
+      [inputId]="PreviewMode.Bar"
+    ></p-radiobutton>
+    <label [for]="PreviewMode.Bar">{{ PreviewMode.Bar }}</label>
+  </div>
+</div>

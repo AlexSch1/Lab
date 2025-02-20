@@ -1,0 +1,10 @@
+<p-card header="Sort">
+  <form [formGroup]="formGroup" class="form">
+    <p-select formControlName="direction" [options]="options" placeholder="Direction" />
+    <p-togglebutton
+      formControlName="filterMinValue"
+      onLabel="Show min value"
+      offLabel="Hide min value"
+    ></p-togglebutton>
+  </form>
+</p-card>
